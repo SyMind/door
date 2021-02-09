@@ -1,1 +1,3 @@
-# door
+# Door
+
+A Password Manager.
