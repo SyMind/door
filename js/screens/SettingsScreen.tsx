@@ -1,23 +1,23 @@
-import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
-import {NavigationFunctionComponent} from 'react-native-navigation';
+import React from 'react'
+import {View, Text, StyleSheet} from 'react-native'
+import {NavigationFunctionComponent} from 'react-native-navigation'
 
 export const SettingsScreen: NavigationFunctionComponent<{}> = () => (
   <View style={styles.root}>
     <Text>Settings Screen</Text>
   </View>
-);
+)
 
 SettingsScreen.options = {
   topBar: {
     title: {
-      text: 'Settings',
-    },
+      text: 'Settings'
+    }
   },
   bottomTab: {
-    text: 'Settings',
+    text: 'Settings'
   }
-};
+}
 
 const styles = StyleSheet.create({
   root: {
@@ -25,6 +25,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   }
-});
+})
 
-export default SettingsScreen;
+export default SettingsScreen

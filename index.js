@@ -1,11 +1,11 @@
-import {Navigation} from 'react-native-navigation';
-import AllItemsScreen from './js/screens/AllItemsScreen';
-import SettingsScreen from './js/screens/SettingsScreen';
-import ItemDetailScreen from './js/screens/ItemDetailScreen';
+import {Navigation} from 'react-native-navigation'
+import AllItemsScreen from './js/screens/AllItemsScreen'
+import SettingsScreen from './js/screens/SettingsScreen'
+import ItemDetailScreen from './js/screens/ItemDetailScreen'
 
-Navigation.registerComponent('AllItems', () => AllItemsScreen);
-Navigation.registerComponent('ItemDetail', () => ItemDetailScreen);
-Navigation.registerComponent('Settings', () => SettingsScreen);
+Navigation.registerComponent('AllItems', () => AllItemsScreen)
+Navigation.registerComponent('ItemDetail', () => ItemDetailScreen)
+Navigation.registerComponent('Settings', () => SettingsScreen)
 Navigation.events().registerAppLaunchedListener(() => {
   Navigation.setRoot({
     root: {
@@ -16,25 +16,25 @@ Navigation.events().registerAppLaunchedListener(() => {
               children: [
                 {
                   component: {
-                    name: 'AllItems',
-                  },
-                },
-              ],
-            },
+                    name: 'AllItems'
+                  }
+                }
+              ]
+            }
           },
           {
             stack: {
               children: [
                 {
                   component: {
-                    name: 'Settings',
-                  },
-                },
-              ],
-            },
-          },
-        ],
-      },
-    },
-  });
-});
+                    name: 'Settings'
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  })
+})
