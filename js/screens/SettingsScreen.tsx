@@ -1,11 +1,40 @@
 import React from 'react'
-import {View, Text, StyleSheet} from 'react-native'
+import {View, StyleSheet, ScrollView} from 'react-native'
 import {NavigationFunctionComponent} from 'react-native-navigation'
+import {ListItem} from 'react-native-elements'
 
 export const SettingsScreen: NavigationFunctionComponent<{}> = () => (
-  <View style={styles.root}>
-    <Text>Settings Screen</Text>
-  </View>
+  <ScrollView style={styles.container}>
+    <View>
+      <ListItem bottomDivider>
+        <ListItem.Content>
+          <ListItem.Title>Lock Now</ListItem.Title>
+        </ListItem.Content>
+        <ListItem.Chevron />
+      </ListItem>
+    </View>
+    
+    <View>
+      <ListItem bottomDivider>
+        <ListItem.Content>
+          <ListItem.Title>General</ListItem.Title>
+        </ListItem.Content>
+        <ListItem.Chevron />
+      </ListItem>
+      <ListItem bottomDivider>
+        <ListItem.Content>
+          <ListItem.Title>Security</ListItem.Title>
+        </ListItem.Content>
+        <ListItem.Chevron />
+      </ListItem>
+      <ListItem bottomDivider>
+        <ListItem.Content>
+          <ListItem.Title>Autofill</ListItem.Title>
+        </ListItem.Content>
+        <ListItem.Chevron />
+      </ListItem>
+    </View>
+  </ScrollView>
 )
 
 SettingsScreen.options = {
@@ -20,11 +49,7 @@ SettingsScreen.options = {
 }
 
 const styles = StyleSheet.create({
-  root: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
+  container: {
+    flex: 1
   }
 })
-
-export default SettingsScreen

@@ -6,20 +6,20 @@ import SectionNavigation from './SectionNavigation'
 
 const DATA = [
   {
-    title: "A",
-    data: ["Pizza", "Burger", "Risotto", "Pizza1", "Burger1", "Risotto1", "Pizza2", "Burger2", "Risotto2", "Pizza3", "Burger3", "Risotto3"]
+    title: 'A',
+    data: ['Pizza', 'Burger', 'Risotto', 'Pizza1', 'Burger1', 'Risotto1', 'Pizza2', 'Burger2', 'Risotto2', 'Pizza3', 'Burger3', 'Risotto3']
   },
   {
-    title: "B",
-    data: ["French Fries", "Onion Rings", "Fried Shrimps", "French Fries1", "Onion Rings1", "Fried Shrimps1", "French Fries2", "Onion Rings2", "Fried Shrimps2"]
+    title: 'B',
+    data: ['French Fries', 'Onion Rings', 'Fried Shrimps', 'French Fries1', 'Onion Rings1', 'Fried Shrimps1', 'French Fries2', 'Onion Rings2', 'Fried Shrimps2']
   },
   {
-    title: "C",
-    data: ["Water", "Coke", "Beer"]
+    title: 'C',
+    data: ['Water', 'Coke', 'Beer']
   },
   {
-    title: "D",
-    data: ["Cheese Cake", "Ice Cream"]
+    title: 'D',
+    data: ['Cheese Cake', 'Ice Cream']
   }
 ]
 
@@ -32,6 +32,7 @@ const AllItemsSectionList: FC<{}> = () => {
       <SectionList
         ref={sectionList}
         style={styles.sectionList}
+        showsVerticalScrollIndicator={false}
         sections={DATA}
         keyExtractor={(item, index) => item + index}
         renderItem={({ item }) => <Item title={item} username={item} />}

@@ -31,13 +31,13 @@ module.exports = {
   ],
   rules: {
     'comma-dangle': 2,
+    'quotes': [2, 'single'],
     'semi': [2, 'never'],
     'react/prop-types': 0,
     'react-native/no-unused-styles': 2,
     'react-native/split-platform-components': 2,
     'react-native/no-inline-styles': 2,
     'react-native/no-color-literals': 0, // temporarily off
-    'react-native/no-raw-text': 2,
     'react-native/no-single-element-style-arrays': 2
   }
 };

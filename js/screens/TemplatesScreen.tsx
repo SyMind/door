@@ -1,19 +1,23 @@
 import React from 'react'
-import {View, Text, StyleSheet} from 'react-native'
+import {View, StyleSheet} from 'react-native'
 import {NavigationFunctionComponent} from 'react-native-navigation'
+import {Text} from 'react-native-elements'
 
-export const ItemDetailScreen: NavigationFunctionComponent<{}> = () => (
+export const TemplatesScreen: NavigationFunctionComponent = () => (
   <View style={styles.root}>
     <Text>Item Detail Screen</Text>
   </View>
 )
 
-ItemDetailScreen.options = {
+TemplatesScreen.options = {
   topBar: {
+    title: {
+      text: 'Templates'
+    },
     rightButtons: [
       {
-        id: 'edit',
-        text: 'Edit'
+        id: 'cancel',
+        text: 'Cancel'
       }
     ]
   }
